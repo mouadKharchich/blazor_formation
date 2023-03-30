@@ -1,0 +1,18 @@
+﻿window.themeChooser = {
+    setTheme: function (themeName) {
+        // Build the new css link
+
+        let head = document.getElementsByTagName("head")[0];
+        head.querySelector("#theme").remove();
+
+        let newLink = document.createElement("link");
+        newLink.setAttribute("id", "theme");
+        newLink.setAttribute("rel", "stylesheet");
+        newLink.setAttribute("type", "text/css");
+        newLink.setAttribute("href", `css/${themeName.toLowerCase()}.css`);
+        // Remove and replace the theme
+        head.appendChild(newLink);
+
+        //alert("testing")
+    }
+}

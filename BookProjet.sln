@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookProjet", "BookProjet\BookProjet.csproj", "{AA586A07-8780-4E6E-9C5E-C201BA282446}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorClassLibrary1", "RazorClassLibrary1\RazorClassLibrary1.csproj", "{DB4DEF45-6214-412E-A941-0CE4466EB286}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA586A07-8780-4E6E-9C5E-C201BA282446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA586A07-8780-4E6E-9C5E-C201BA282446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA586A07-8780-4E6E-9C5E-C201BA282446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA586A07-8780-4E6E-9C5E-C201BA282446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB4DEF45-6214-412E-A941-0CE4466EB286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB4DEF45-6214-412E-A941-0CE4466EB286}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB4DEF45-6214-412E-A941-0CE4466EB286}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB4DEF45-6214-412E-A941-0CE4466EB286}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FAE08DB3-4F75-499C-B813-4B7419F8843D}
+	EndGlobalSection
+EndGlobal

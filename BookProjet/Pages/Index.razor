@@ -1,0 +1,27 @@
+﻿@page "/"
+@inject IJSRuntime js
+@using RazorClassLibrary1
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+
+<Component1></Component1>
+
+<button class="btn btn-primary" @onclick="ShowPrompt">Show Prompt</button>
+
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+@code {
+    string message = "world";
+
+     //ExampleJsInterop example = new ExampleJsInterop(js);
+
+    async Task ShowPrompt() => message = await ExampleJsInterop.Prompt( js,"Say hello:");
+    //async Task ShowPrompt() => message = await ExampleJsInterop.Prompt(js, "Say hello:");
+
+}

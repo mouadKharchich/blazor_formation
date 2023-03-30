@@ -1,0 +1,22 @@
+﻿@page "/changeBg"
+@inject IJSRuntime js
+
+<head>
+
+</head>
+<div class="alert alert-info my-2">
+ Click here to switch themes 
+ <button @onclick="SwapTheme" class="btn btn-primary" 
+>change backgroud</button>
+</div>
+
+
+@code {
+    public bool isDark = false;
+    string SetThemeName => isDark ? "Dark" : "Light";
+ async Task SwapTheme()
+ {
+ isDark = !isDark;
+ await js.InvokeVoidAsync("themeChooser.setTheme", SetThemeName);
+ }
+}
